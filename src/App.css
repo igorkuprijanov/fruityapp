@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: #ebecf1;
+    overflow: hidden;
+}
+#top{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+}
+#top>input{
+    width: 200px;
+    height: 20px;
+    margin-right: 40px;
+    margin-top: 50px;
+    z-index: 2;
+}
+#top>img{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#top>h2{
+    margin: auto auto 0px 20px;
+}
+#navigation{
+     display: flex;
+    flex-direction: row;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    margin-left: 20px;
+    margin-top: 340px;
+    height: 100px;
+    width: 350px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: 600;
+}
+#navigation>*{
+    margin: 20px 10px 0px 10px;
+    color: #393b44;
+    transition: 0.4s ease-out;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+#navigation>*:hover{
+    transition: 0.4s ease-out;
+    cursor: pointer;
+    color: #8d93ab;
+    font-size: 150%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#facebookicon{
+    position: fixed;
+    margin-left: 50px;
+    margin-top: 15px;
+    bottom: 10px;
+}
+#twittericon{
+    position: fixed;
+    margin-left: 90px;
+    margin-top: 15px;
+    bottom: 10px;
+}
+#instagramicon{
+    position: fixed;
+    margin-left: 130px;
+    margin-top: 15px;
+    bottom: 10px;
+}
+#facebookicon:hover{
+    cursor: pointer;
+}
+#twittericon:hover{
+    cursor: pointer;
+}
+#instagramicon:hover{
+    cursor: pointer;
+}
+#navigationmain{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    margin-left: 15%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.react-icons{
+    transition: 0.1s ease-out;
+}
+.react-icons:hover{
+    cursor: pointer;
+    transform:  scale(1.2)
+}
+#navigationbar{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 30%;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#fruititem{
+    width: 100%;
+    height: 75%;
+    align-self: center;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#bigfruititem{
+    width: 300px;
+    height: 300px;
 }
-
-.App-link {
-  color: #61dafb;
+#seasonalpage{
+    position: absolute;
+    top: 30%;
+    width: 80vw;
+    left: 15%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#fact1{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 27%;
+    text-align: justify;
+    border-top: 1px solid lightgray;
+   
+}
+#fact2{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    right: 20px;
+    top: 27%;
+    text-align: justify;
+    border-top: 1px solid lightgray;
+  
+}
+#fact3{
+    position: absolute;
+    width: 600px;
+    text-align: justify;
+    top: 75%;
+    left: 15%;
+    border-top: 1px solid lightgray;
+}
+#seasonalcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+#seasonalheading{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#seasonalcontainer h2{
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+#seasonalcontainer li{
+    line-height: 24px;
+}
+.icons{
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+.linkItem{
+    list-style-type:none;
+}
+.linkItem:visited{
+    color: black;
+}
+.linkItem:hover{
+    color: red;
+    cursor: pointer;
+}
+#search{
+    margin-right: 3%;
+    margin-top: 3%;
+    overflow: visible;
+}
+.searchBar{
+   height: 15px;
+    padding: 5px 5px 5px 5px;
+    overflow: visible;
+}
+#aboutpage{
+    width: 70vw;
+    height: 50vh;
+    position: absolute;
+    top: 27%;
+    left: 15.3%;
+    
+}
+#aboutpagehead{
+    margin-bottom: 12px;
+    margin-left: 30px;
+}
+#aboutpageparagraph{
+   margin-bottom: 15px;
+    line-height: 24px;
+    margin-left: 30px;
+}
+#aboutpageicontribute>a{
+   text-decoration: none
+}
+#aboutpagelist{
+    margin-bottom: 2%;
+    line-height: 30px;
+    margin-left: 30px;
+}
+#aboutpagelist>li{
+    margin-left: 2%;
+}
+#aboutpageicontribute{
+    margin-left: 30px;
 }
